@@ -1,0 +1,166 @@
+@font-face {
+	font-family: 'NevaC';
+	src: url('../fonts/NevaC.otf');
+}
+
+// @font-face {
+// 	font-family: 'GillSans';
+// 	src: url('/fonts/GillSansC.otf');
+// }
+
+// @font-face {
+// 	font-family: 'GillSansLight';
+// 	src: url('/fonts/GillSansLightC.otf');
+// }
+
+html, body, .outer_block
+	height 100%
+
+body
+	margin 0
+	padding 0
+
+.outer_block
+	width 100%
+	// height 1080px
+	// min-width 1380px
+	min-width 1860px
+	min-height 1080px
+	// outline 1px solid red
+	position relative
+
+.block_ordens
+	// outline 1px solid red
+	width 1270px
+	position absolute
+	left 50%
+	margin-left -635px
+	top 40px
+	.navigate_block
+		position relative
+		z-index 999
+		.nav
+			position absolute
+			top 60px
+			path
+				fill #986727
+			&:hover
+				path
+					fill black
+			&.next
+				transform scale(-1, 1)
+				right 40px
+			&.prev
+				left 40px
+
+.block_persons
+	width 100%
+	position absolute
+	bottom 0
+	.navigate_block
+		position relative
+		z-index 999
+		.nav
+			position absolute
+			top -80px
+			fill #986727
+			&:hover
+				fill black
+			&.next
+				transform scale(-1, 1)
+				right 40px
+			&.prev
+				left 40px
+
+.compare_block
+	top 220px
+	width 100%
+	position absolute
+	display none
+	.compare_results
+		// border 1px solid red
+		margin 0 auto
+		width 1047px
+		height 260px
+		font 12pt/14pt 'NevaC'
+		overflow hidden
+		&.sucess
+			.flag
+				fill #986727
+			.flag_text
+				color #986727
+		&.reject
+			.flag
+				fill #666666
+			.flag_text
+				color #666666
+		.flag
+			display block
+			float left
+		.flag_text
+			float left
+			margin-left 20px
+			margin-top 32px
+			width 690px
+			height 195px
+			// outline 1px solid red
+
+.carousel
+	// outline 1px solid red
+	&.ordens
+		width 1047px
+		height 162px
+		margin 0 auto
+	&.persons
+		width 100%
+		height 600px
+		margin 0 auto
+
+.orden
+	width 160px
+	height 160px
+	background-position center!important
+	background-size 70%!important
+	background-repeat no-repeat!important
+	border 1px solid black
+	margin-right 15px
+	&.ui-draggable-dragging
+		border none
+
+.person
+	width 395px
+	height 600px
+	background-size 93% auto!important
+	background-position bottom!important
+	background-repeat no-repeat!important
+	transition background-size .3s linear
+	margin-right -100px
+	.orden
+		margin-top 60px
+	&.activate
+	&.no_active
+		background-size 70% auto!important
+		opacity 0.6!important
+	&.hover
+	&.active
+		opacity 1!important
+		background-size 93%!important
+		transition background-size .3s linear
+	.person_name
+		display none
+		color #666666
+		width 395px
+		position absolute
+		font 14pt/16pt 'NevaC'
+		.name_inner
+			width 395px
+			min-height 60px
+			position relative
+			// outline 1px solid red
+			.inner_text
+				width 395px
+				text-align center
+				white-space normal
+				position absolute
+				bottom 0
+				left 0

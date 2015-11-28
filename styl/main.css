@@ -1,0 +1,172 @@
+@font-face {
+  font-family: 'NevaC';
+  src: url("../fonts/NevaC.otf");
+}
+html,
+body,
+.outer_block {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.outer_block {
+  width: 100%;
+  min-width: 1860px;
+  min-height: 1080px;
+  position: relative;
+}
+.block_ordens {
+  width: 1270px;
+  position: absolute;
+  left: 50%;
+  margin-left: -635px;
+  top: 40px;
+}
+.block_ordens .navigate_block {
+  position: relative;
+  z-index: 999;
+}
+.block_ordens .navigate_block .nav {
+  position: absolute;
+  top: 60px;
+}
+.block_ordens .navigate_block .nav path {
+  fill: #986727;
+}
+.block_ordens .navigate_block .nav:hover path {
+  fill: #000;
+}
+.block_ordens .navigate_block .nav.next {
+  transform: scale(-1, 1);
+  right: 40px;
+}
+.block_ordens .navigate_block .nav.prev {
+  left: 40px;
+}
+.block_persons {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.block_persons .navigate_block {
+  position: relative;
+  z-index: 999;
+}
+.block_persons .navigate_block .nav {
+  position: absolute;
+  top: -80px;
+  fill: #986727;
+}
+.block_persons .navigate_block .nav:hover {
+  fill: #000;
+}
+.block_persons .navigate_block .nav.next {
+  transform: scale(-1, 1);
+  right: 40px;
+}
+.block_persons .navigate_block .nav.prev {
+  left: 40px;
+}
+.compare_block {
+  top: 220px;
+  width: 100%;
+  position: absolute;
+  display: none;
+}
+.compare_block .compare_results {
+  margin: 0 auto;
+  width: 1047px;
+  height: 260px;
+  font: 12pt/14pt 'NevaC';
+  overflow: hidden;
+}
+.compare_block .compare_results.sucess .flag {
+  fill: #986727;
+}
+.compare_block .compare_results.sucess .flag_text {
+  color: #986727;
+}
+.compare_block .compare_results.reject .flag {
+  fill: #666;
+}
+.compare_block .compare_results.reject .flag_text {
+  color: #666;
+}
+.compare_block .compare_results .flag {
+  display: block;
+  float: left;
+}
+.compare_block .compare_results .flag_text {
+  float: left;
+  margin-left: 20px;
+  margin-top: 32px;
+  width: 690px;
+  height: 195px;
+}
+.carousel.ordens {
+  width: 1047px;
+  height: 162px;
+  margin: 0 auto;
+}
+.carousel.persons {
+  width: 100%;
+  height: 600px;
+  margin: 0 auto;
+}
+.orden {
+  width: 160px;
+  height: 160px;
+  background-position: center !important;
+  background-size: 70% !important;
+  background-repeat: no-repeat !important;
+  border: 1px solid #000;
+  margin-right: 15px;
+}
+.orden.ui-draggable-dragging {
+  border: none;
+}
+.person {
+  width: 395px;
+  height: 600px;
+  background-size: 93% auto !important;
+  background-position: bottom !important;
+  background-repeat: no-repeat !important;
+  transition: background-size 0.3s linear;
+  margin-right: -100px;
+}
+.person .orden {
+  margin-top: 60px;
+}
+.person.activate,
+.person.no_active {
+  background-size: 70% auto !important;
+  opacity: 0.6 !important;
+}
+.person.hover,
+.person.active {
+  opacity: 1 !important;
+  background-size: 93% !important;
+  transition: background-size 0.3s linear;
+}
+.person .person_name {
+  display: none;
+  color: #666;
+  width: 395px;
+  position: absolute;
+  font: 14pt/16pt 'NevaC';
+}
+.person .person_name .name_inner {
+  width: 395px;
+  min-height: 60px;
+  position: relative;
+}
+.person .person_name .name_inner .inner_text {
+  width: 395px;
+  text-align: center;
+  white-space: normal;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}

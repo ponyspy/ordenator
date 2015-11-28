@@ -1,0 +1,39 @@
+doctype html
+html
+	head
+		title Орденатор!
+		meta(charset="utf-8")
+		link(rel='stylesheet', type='text/css', href='styl/main.css')
+		<script type='text/javascript' src='js/jquery-2.1.4.min.js'></script>
+		<script type='text/javascript' src="js/jquery-ui.min.js"></script>
+		<script type='text/javascript' src="js/jquery.ui.touch-punch.min.js"></script>
+		<script type='text/javascript' src="js/jquery.cycle2.min.js"></script>
+		<script type='text/javascript' src="js/jquery.cycle2.carousel.min.js"></script>
+		<script type='text/javascript' src='db/ordens.js'></script>
+		<script type='text/javascript' src='db/persons.js'></script>
+		<script type='text/javascript' src='js/main.js'></script>
+	body
+		.outer_block
+			.block_ordens
+				.navigate_block
+					.nav.prev
+						include img/icons/arrow_short.svg
+					.nav.next
+						include img/icons/arrow_short.svg
+				.carousel.ordens
+
+			.compare_block
+				.compare_results
+					.flag.sucess
+						include img/icons/true.svg
+					.flag.reject
+						include img/icons/false.svg
+					.flag_text
+
+			.block_persons
+				.navigate_block
+					.nav.prev
+						include img/icons/arrow_long.svg
+					.nav.next
+						include img/icons/arrow_long.svg
+				.carousel.persons
