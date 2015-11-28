@@ -8,8 +8,8 @@ $(document).ready(function() {
 		var $person = $('<div/>', {'class': 'person', 'person-id': person._person_id, 'style':'background: url(' + person.img + ')'});
 		var $person_name = $('<div/>', {'class': 'person_name'});
 		var $name_inner = $('<div/>', {'class': 'name_inner'});
-		var $inner_text = $('<div/>', {'class': 'inner_text', 'text': person.name})
-		$('.carousel.persons').append($person.append($person_name.append($name_inner.append($inner_text))));
+		var $inner_text = $('<div/>', {'class': 'inner_text'})
+		$('.carousel.persons').append($person.append($person_name.append($name_inner.append($inner_text.append(person.name)))));
 	});
 
 	$(document).on('mouseup', function(event) {
@@ -74,7 +74,7 @@ $(document).ready(function() {
 
 				$('.compare_block').show().children('.compare_results').addClass(flag);
 				$('.flag').hide().filter('.' + flag).show();
-				$('.flag_text').text(flag_text);
+				$('.flag_text').empty().append(flag_text);
 
 				$('.person').addClass('no_active');
 				$('.block_persons').children('.navigate_block').hide();
