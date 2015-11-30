@@ -65,7 +65,7 @@ $(document).ready(function() {
 					flag = 'sucess';
 					flag_text = person_orden.sucess;
 				} else if (person_orden.reject) {
-					flag = 'sucess';
+					flag = 'reject';
 					flag_text = person_orden.reject;
 				} else {
 					alert('Error:', '_orden_id: ' + orden_id, '_person_id: ' + person_id);
