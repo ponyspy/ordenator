@@ -36,7 +36,7 @@ $(document).ready(function() {
 
 			$('.compare_block').show();
 			$('.flag').hide().filter('.desc').show();
-			$('.meta').addClass('desc').children().empty()
+			$('.meta').children().empty()
 				.filter('.name').append(person.name).end()
 				.filter('.years').append(person.years).end()
 				.filter('.text').append(person.desc);
@@ -52,7 +52,6 @@ $(document).ready(function() {
 				$('.block_persons').children('.navigate_block').hide();
 				$('.person').children('.orden').remove().end().removeClass('active no_active');
 				$('.compare_block').hide().children('.compare_results').removeClass('sucess reject');
-				$('.meta').removeClass('compare desc');
 				$('.block_persons').children('.navigate_block').show();
 			}
 		});
@@ -97,7 +96,7 @@ $(document).ready(function() {
 				$('.person_name').hide();
 				$('.compare_block').show().children('.compare_results').addClass(flag);
 				$('.flag').hide().filter('.' + flag).show();
-				$('.meta').addClass('compare').children().empty()
+				$('.meta').children().empty()
 					.filter('.name').append(person.name).end()
 					.filter('.years').append(person.years).end()
 					.filter('.text').append(flag_text);

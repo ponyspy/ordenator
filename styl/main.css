@@ -114,9 +114,6 @@ body {
   width: 690px;
   height: 195px;
 }
-.compare_block .compare_results .meta.compare .name {
-  margin-top: 30px;
-}
 .compare_block .compare_results .meta .name {
   font: 16pt/18pt 'NevaCBold';
 }
