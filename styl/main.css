@@ -2,6 +2,10 @@
   font-family: 'NevaC';
   src: url("../fonts/NevaC.otf");
 }
+@font-face {
+  font-family: 'NevaCBold';
+  src: url("/fonts/NevaCBold.otf");
+}
 html,
 body,
 .outer_block {
@@ -85,25 +89,42 @@ body {
 .compare_block .compare_results.sucess .flag {
   fill: #986727;
 }
-.compare_block .compare_results.sucess .flag_text {
+.compare_block .compare_results.sucess .text {
   color: #986727;
 }
 .compare_block .compare_results.reject .flag path {
   fill: #666;
 }
-.compare_block .compare_results.reject .flag_text {
+.compare_block .compare_results.reject .text {
   color: #666;
 }
 .compare_block .compare_results .flag {
+  width: 335px;
+  height: 225px;
   display: block;
   float: left;
+  font: 16pt/18pt 'NevaCBold';
 }
-.compare_block .compare_results .flag_text {
+.compare_block .compare_results .flag.desc {
+  color: #986727;
+}
+.compare_block .compare_results .meta {
   float: left;
   margin-left: 20px;
-  margin-top: 32px;
   width: 690px;
   height: 195px;
+}
+.compare_block .compare_results .meta.desc .name {
+  margin-top: 2px;
+}
+.compare_block .compare_results .meta.compare .name {
+  margin-top: 27px;
+}
+.compare_block .compare_results .meta .name {
+  font: 16pt/22pt 'NevaCBold';
+}
+.compare_block .compare_results .meta .years {
+  font: 14pt/22pt 'NevaC';
 }
 .carousel.ordens {
   width: 1047px;

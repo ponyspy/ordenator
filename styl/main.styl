@@ -3,10 +3,10 @@
 	src: url('../fonts/NevaC.otf');
 }
 
-// @font-face {
-// 	font-family: 'GillSans';
-// 	src: url('/fonts/GillSansC.otf');
-// }
+@font-face {
+	font-family: 'NevaCBold';
+	src: url('/fonts/NevaCBold.otf');
+}
 
 // @font-face {
 // 	font-family: 'GillSansLight';
@@ -87,23 +87,34 @@ body
 		&.sucess
 			.flag
 				fill #986727
-			.flag_text
+			.text
 				color #986727
 		&.reject
 			.flag path
 				fill #666666
-			.flag_text
+			.text
 				color #666666
 		.flag
+			width 335px
+			height 225px
 			display block
 			float left
-		.flag_text
+			font 16pt/18pt 'NevaCBold'
+			&.desc
+				color #986727
+		.meta
 			float left
 			margin-left 20px
-			margin-top 32px
 			width 690px
 			height 195px
-			// outline 1px solid red
+			&.desc .name
+				margin-top 2px
+			&.compare .name
+				margin-top 27px
+			.name
+				font 16pt/22pt 'NevaCBold'
+			.years
+				font 14pt/22pt 'NevaC'
 
 .carousel
 	// outline 1px solid red
