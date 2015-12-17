@@ -44,10 +44,10 @@ body {
 }
 .block_ordens .navigate_block .nav.next {
   transform: scale(-1, 1);
-  right: 40px;
+  right: 60px;
 }
 .block_ordens .navigate_block .nav.prev {
-  left: 40px;
+  left: 60px;
 }
 .block_persons {
   width: 100%;
@@ -114,17 +114,17 @@ body {
   width: 690px;
   height: 195px;
 }
-.compare_block .compare_results .meta.desc .name {
-  margin-top: 2px;
-}
 .compare_block .compare_results .meta.compare .name {
-  margin-top: 27px;
+  margin-top: 30px;
 }
 .compare_block .compare_results .meta .name {
-  font: 16pt/22pt 'NevaCBold';
+  font: 16pt/18pt 'NevaCBold';
 }
 .compare_block .compare_results .meta .years {
-  font: 14pt/22pt 'NevaC';
+  font: 14pt/18pt 'NevaC';
+}
+.compare_block .compare_results .meta .text {
+  margin-top: 5px;
 }
 .carousel.ordens {
   width: 1047px;
