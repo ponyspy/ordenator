@@ -8,12 +8,15 @@ $(document).ready(function() {
 
 	persons_db.list.forEach(function(person) {
 		var $person = $('<div/>', {'class': 'person', 'person-id': person._person_id, 'style':'background: url(' + person.img + ')'});
-		$('.carousel.persons').append($person);
+		var $person_name = $('<div/>', {'class': 'person_name'});
+		var $name_inner = $('<div/>', {'class': 'name_inner'});
+		var $inner_text = $('<div/>', {'class': 'inner_text'})
+		$('.carousel.persons').append($person.append($person_name.append($name_inner.append($inner_text.append(person.name)))));
 	});
 
 	$(document).on('mouseup', function(event) {
 		if (!/orden|next|prev/.test(event.target.className)) {
-			$('.person').children('.orden').remove().end().removeClass('active no_active');
+			$('.person').children('.orden').remove().end().children('.person_name').hide().end().removeClass('active no_active');
 			$('.compare_block').hide().children('.compare_results').removeClass('sucess reject');
 			$('.block_persons').children('.navigate_block').show();
 		}
@@ -28,7 +31,7 @@ $(document).ready(function() {
 			start: function(event, ui) {
 				$(ui.helper).children('.orden_title').remove();
 				$('.block_persons').children('.navigate_block').hide();
-				$('.person').children('.orden').remove().end().removeClass('active no_active');
+				$('.person').children('.orden').remove().end().children('.person_name').hide().end().removeClass('active no_active');
 				$('.compare_block').hide().children('.compare_results').removeClass('sucess reject');
 				$('.block_persons').children('.navigate_block').show();
 			}
@@ -38,6 +41,12 @@ $(document).ready(function() {
 			hoverClass: 'hover',
 			activeClass: 'activate',
 			tolerance: 'fit',
+			over: function() {
+				$(this).children('.person_name').show();
+			},
+			out: function() {
+				$(this).children('.person_name').hide();
+			},
 			drop: function(event, ui) {
 				var person_id = $(this).attr('person-id');
 				var orden_id = $(ui.helper).attr('orden-id');

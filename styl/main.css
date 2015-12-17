@@ -159,3 +159,23 @@ body {
   background-size: 93% !important;
   transition: background-size 0.3s linear;
 }
+.person .person_name {
+  display: none;
+  color: #666;
+  width: 395px;
+  position: absolute;
+  font: 14pt/16pt 'NevaC';
+}
+.person .person_name .name_inner {
+  width: 395px;
+  min-height: 60px;
+  position: relative;
+}
+.person .person_name .name_inner .inner_text {
+  width: 395px;
+  text-align: center;
+  white-space: normal;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
