@@ -97,7 +97,8 @@ body {
 }
 .compare_block .compare_results .meta {
   float: left;
-  width: 420px;
+  margin-left: 25px;
+  width: 615px;
   height: 195px;
   margin-top: 15px;
 }
