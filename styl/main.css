@@ -99,10 +99,11 @@ body {
   float: left;
   margin-left: 25px;
   width: 615px;
-  height: 195px;
-  margin-top: 15px;
+  height: 190px;
+  margin-top: 20px;
 }
 .compare_block .compare_results .meta .name {
+  margin-top: 5px;
   font: 16pt/18pt 'NevaCBold';
 }
 .compare_block .compare_results .meta .years {
