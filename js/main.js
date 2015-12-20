@@ -2,8 +2,8 @@ $(document).ready(function() {
 
 	ordens_db.forEach(function(orden) {
 		var $orden = $('<div/>', {'class': 'orden', 'orden-id': orden._orden_id, 'style':'background: url(' + orden.img + ')'});
-		var $orden_title = $('<div/>', {'class': 'orden_title', 'text': orden.title});
-		$('.carousel.ordens').append($orden.append($orden_title));
+		var $orden_title = $('<div/>', {'class': 'orden_title'});
+		$('.carousel.ordens').append($orden.append($orden_title.append(orden.title)));
 	});
 
 	persons_db.list.forEach(function(person) {

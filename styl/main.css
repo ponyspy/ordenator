@@ -86,35 +86,21 @@ body {
   font: 12pt/14pt 'NevaC';
   overflow: hidden;
 }
-.compare_block .compare_results.sucess .flag {
-  fill: #986727;
-}
-.compare_block .compare_results.sucess .text {
-  color: #986727;
-}
-.compare_block .compare_results.reject .flag path {
-  fill: #666;
-}
-.compare_block .compare_results.reject .text {
-  color: #666;
-}
 .compare_block .compare_results .flag {
   width: 335px;
   height: 225px;
   display: block;
   float: left;
-  font: 16pt/18pt 'NevaCBold';
-}
-.compare_block .compare_results .flag.desc {
-  color: #986727;
-  padding-top: 30px;
+  background-size: 85%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .compare_block .compare_results .meta {
   float: left;
   margin-left: 20px;
   width: 690px;
   height: 195px;
-  margin-top: 30px;
+  margin-top: 15px;
 }
 .compare_block .compare_results .meta .name {
   font: 16pt/18pt 'NevaCBold';
@@ -138,7 +124,7 @@ body {
 .orden {
   width: 160px;
   height: 160px;
-  background-position: 50% 30% !important;
+  background-position: 50% 25% !important;
   background-size: 65% !important;
   background-repeat: no-repeat !important;
   border: 1px solid #986727;
@@ -146,7 +132,7 @@ body {
 }
 .orden .orden_title {
   width: 160px;
-  height: 40px;
+  height: 43px;
   font: 10pt/12pt 'NevaC';
   color: #986727;
   text-align: center;
